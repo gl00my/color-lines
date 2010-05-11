@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1400"
+   height="200"
+   id="svg4427"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   version="1.0"
+   sodipodi:docbase="/home/gloomy/Develop/OSSO/lines-0.1-2/svg"
+   sodipodi:docname="font.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4429" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="-80.236856"
+     inkscape:cy="52.762352"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     width="1400px"
+     height="200px"
+     gridspacingx="24px"
+     gridspacingy="24px"
+     showgrid="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="965"
+     inkscape:window-x="0"
+     inkscape:window-y="0" />
+  <metadata
+     id="metadata4432">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#408eb8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4435"
+       width="2290.3572"
+       height="456.07141"
+       x="-265.77377"
+       y="-203.7832" />
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Gilligans Island"
+       x="-253.91496"
+       y="220.13818"
+       id="text4413"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4415"
+         x="-253.91496"
+         y="220.13818"
+         dx="0 15.714277 12.499995 10.357141 12.142853 7.142858 12.499995 18.214281 15.357135 17.499994 13.571423 13.928565 15.357135 17.142851 17.499994 6.7857151 10.357141 15.357136 12.142853 13.571423 9.999999 9.6428566 9.6428566 11.071425 12.857138 14.64285 19.642855 9.6428566 9.999999 8.5714293 5.7142863 8.9285717 7.8571439 13.571423 11.78571 11.78571 11.78571 11.78571 9.2857141 9.9999981 13.928565 14.999992 12.142853 11.428568 7.500001 6.0714293 9.2857141 12.499995 8.9285707 12.142853 14.64285 6.7857151 9.2857141 10.714283 8.5714293 8.5714293 9.999999 11.78571 13.928565 12.857138 13.21428 10.714283 4.2857146 9.6428556 11.428568 15.357135 12.499995 11.071425 12.857138 12.857138 12.142853 12.142853 14.999992 19.285711 14.64285 13.21428 9.999999 9.2857141 11.428568 14.285707 12.142853 15.357135 13.21428 13.571423 13.21428 10.714283 7.142858 7.142858 12.499995 13.928565 11.071425 17.142851 18.928568 15.357135">!&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~</tspan></text>
+  </g>
+</svg>

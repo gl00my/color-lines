@@ -1,0 +1,25 @@
+DEFINES = -DWINDOWS -DGAMEDATADIR=\"\"
+CXX = gcc
+CXXFLAGS = $(DEFINES)
+LIBS = -lSDLmain -lSDL -lSDL_mixer -lSDL_ttf -lSDL_image
+TARGET = lines.exe
+
+all: $(TARGET)
+
+main.o: main.c
+	$(CXX) -c main.c $(CXXFLAGS) -o main.o
+
+graphics.o: graphics.c
+	$(CXX) -c graphics.c $(CXXFLAGS) -o graphics.o
+
+board.o: board.c
+	$(CXX) -c board.c $(CXXFLAGS) -o board.o
+
+sound.o: sound.c
+	$(CXX) -c sound.c $(CXXFLAGS) -o sound.o
+
+resources.o: resources.rc
+	windres -i resources.rc -o resources.o
+
+$(TARGET): main.o graphics.o board.o sound.o resources.o
+	$(CXX) -o $(TARGET) main.o graphics.o board.o sound.o resources.o -mwindows $(LIBS)
