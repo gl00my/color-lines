@@ -266,7 +266,7 @@ static const char *game_print(const char *str)
 	return ptr;
 }
 
-char info_text[] = " -= Color Lines v0.4.2 =-\n\n"
+char info_text[] = " -= Color Lines v0.5 =-\n\n"
 	"Try to arrange balls of the same color in vertical, "
 	"horizontal or diagonal lines."
 	"To move a ball click on it to select, "
