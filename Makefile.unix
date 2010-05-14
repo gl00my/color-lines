@@ -1,3 +1,7 @@
+VERSION := 0.5
+VERTITLE := lines-$(VERSION)
+ARCHIVE := lines_$(VERSION).tar.gz
+
 CFLAGS:=-Wall -O2 $(shell sdl-config --cflags) 
 #-DMAEMO
 
@@ -11,6 +15,14 @@ PREFIX:=/usr/local
 
 BINDIR=$(DESTDIR)/$(PREFIX)/games
 GAMEDATADIR=$(DESTDIR)/$(PREFIX)/share/games/color-lines
+
+svnclean:
+	svn st | grep "^?" | awk '{ print $$2 }' | while read l; do $(RM) -rf $$l; done
+
+tarball: clean svnclean
+	ln -sf ./ $(VERTITLE)
+	tar -cz --exclude $(VERTITLE)/$(VERTITLE) --exclude .svn --exclude $(ARCHIVE) -f $(ARCHIVE) $(VERTITLE)/*
+	$(RM) -f $(VERTITLE)
 
 $(OBJ): %.o : %.c
 	$(CC) -c $(<) $(I) $(CFLAGS) -DGAMEDATADIR=\"$(PREFIX)/share/games/color-lines/\"
