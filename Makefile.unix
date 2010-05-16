@@ -13,8 +13,8 @@ OBJ     := $(patsubst %.c, %.o, $(SRC))
 all: color-lines
 PREFIX:=/usr/local
 
-BINDIR:=$(DESTDIR)/$(PREFIX)/games
-GAMEDATADIR:=$(DESTDIR)/$(PREFIX)/share/games/color-lines
+BINDIR:=$(DESTDIR)/$(PREFIX)/games/
+GAMEDATADIR:=$(DESTDIR)/$(PREFIX)/share/games/color-lines/
 
 svnclean:
 	svn st | grep "^?" | awk '{ print $$2 }' | while read l; do $(RM) -rf $$l; done

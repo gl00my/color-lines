@@ -30,7 +30,7 @@ build-stamp:
 	dh_testdir
 
 	# Add here commands to compile the package.
-	$(MAKE) PREFIX=/usr/
+	$(MAKE) PREFIX=/usr
 
 	touch build-stamp
 
@@ -40,7 +40,7 @@ clean:
 	rm -f build-stamp 
 
 	# Add here commands to clean up after the build process.
-	-$(MAKE) PREFIX=/usr/ clean
+	-$(MAKE) PREFIX=/usr clean
 	dh_clean 
 
 install: build
@@ -50,7 +50,7 @@ install: build
 	dh_installdirs
 
 	# Add here commands to install the package into debian/icebreaker.
-	$(MAKE) install DESTDIR=$(CURDIR)/debian/color-lines PREFIX=/usr/
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/color-lines PREFIX=/usr
 
 # Build architecture-independent files here.
 binary-indep: build install
