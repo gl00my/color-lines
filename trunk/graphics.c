@@ -319,12 +319,12 @@ int gfx_init(void)
 #ifdef MAEMO	
 	screen = SDL_SetVideoMode(800, 480, 16, SDL_DOUBLEBUF | SDL_HWSURFACE | SDL_FULLSCREEN);
 #else
-	screen = SDL_SetVideoMode(800, 480, 32, SDL_DOUBLEBUF | SDL_HWSURFACE);
 	SDL_WM_SetCaption("Color Lines", NULL);
 	icon = IMG_Load( GAMEDATADIR"icon/color-lines.png" );
 	if (icon) {
 		SDL_WM_SetIcon( icon, NULL );
 	}
+	screen = SDL_SetVideoMode(800, 480, 32, SDL_DOUBLEBUF | SDL_HWSURFACE);
 #endif	
 	if (screen == NULL) {
 		fprintf(stderr, "Unable to set 800x480 video: %s\n", SDL_GetError());

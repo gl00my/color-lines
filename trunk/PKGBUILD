@@ -11,7 +11,7 @@ depends=('sdl' 'sdl_image' 'sdl_mixer')
 makedepends=( 'pkgconfig' )
 
 source=(http://color-lines.googlecode.com/files/lines_$pkgver.tar.gz)
-md5sums=(9364f7981ee54347bdfeae68954ba873)
+md5sums=(146ae970690d5df1a6b4a791e42b735f)
 
 build() {
 cd $startdir/src/lines-$pkgver
