@@ -1,5 +1,5 @@
 # Contributor: Peter Kosyh <p.kosyhgmail.com>
-pkgname=lines
+pkgname=color-lines
 pkgver=0.5
 pkgrel=1
 pkgdesc="color lines game"
@@ -10,8 +10,8 @@ license=('GPL')
 depends=('sdl' 'sdl_image' 'sdl_mixer')
 makedepends=( 'pkgconfig' )
 
-source=(http://instead.googlecode.com/files/lines_$pkgver.tar.gz)
-md5sums=(54a39c16d42260a17f8fe15e582e946b)
+source=(http://color-lines.googlecode.com/files/lines_$pkgver.tar.gz)
+md5sums=(9364f7981ee54347bdfeae68954ba873)
 
 build() {
 cd $startdir/src/lines-$pkgver
