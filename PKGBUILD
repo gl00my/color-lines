@@ -4,7 +4,7 @@ pkgver=0.5
 pkgrel=1
 pkgdesc="Color lines game written with SDL with bonus features. "
 arch=('i686' 'x86_64')
-url="http://instead.googlecode.com/"
+url="http://color-lines.googlecode.com/"
 license=('GPL')
 
 depends=('sdl' 'sdl_image' 'sdl_mixer')
