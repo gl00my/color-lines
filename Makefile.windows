@@ -23,3 +23,15 @@ resources.o: resources.rc
 
 $(TARGET): main.o graphics.o board.o sound.o resources.o
 	$(CXX) -o $(TARGET) main.o graphics.o board.o sound.o resources.o -mwindows $(LIBS)
+
+install: all
+	if not exist bin mkdir bin
+	if not exist bin\gfx mkdir bin\gfx
+	if not exist bin\sounds mkdir bin\sounds
+	if not exist bin\icon mkdir bin\icon
+
+	copy lines.exe bin
+	for /D %%f in (gfx) do ( copy /Y %%f bin\gfx )
+	for /D %%f in (sounds) do ( copy /Y %%f bin\sounds )
+	for /D %%f in (icon) do ( copy /Y %%f bin\icon )
+
