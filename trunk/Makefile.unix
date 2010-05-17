@@ -28,6 +28,7 @@ $(OBJ): %.o : %.c
 	$(CC) -c $(<) $(I) $(CFLAGS) -DGAMEDATADIR=\"$(GAMEDATADIR)\"
 
 color-lines:  $(OBJ)
+	cat color-lines.desktop.in | sed -e "s|@BINDIR|$(BINDIR)|g" > color-lines.desktop
 	$(CC) $(CFLAGS) $(LDFLAGS) $(^) -o $(@) 
 	strip color-lines
 
@@ -68,5 +69,4 @@ install: all
 	install -d $(DESTDIR)/$(PREFIX)/share/pixmaps
 	install -d $(DESTDIR)/$(PREFIX)/share/applications/
 	install -m 0644 icon/color-lines.png $(DESTDIR)/$(PREFIX)/share/pixmaps
-	cat color-lines.desktop.in | sed -e "s|@BINDIR|$(BINDIR)|g" > color-lines.desktop
 	install -m 0644 color-lines.desktop $(DESTDIR)/$(PREFIX)/share/applications/color-lines.desktop
