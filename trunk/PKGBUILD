@@ -1,7 +1,7 @@
 # Contributor: Peter Kosyh <p.kosyhgmail.com>
 pkgname=color-lines
 pkgver=0.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Color lines game written with SDL with bonus features. "
 arch=('i686' 'x86_64')
 url="http://color-lines.googlecode.com/"
@@ -11,7 +11,7 @@ depends=('sdl' 'sdl_image' 'sdl_mixer')
 makedepends=( 'pkgconfig' )
 
 source=(http://color-lines.googlecode.com/files/lines_$pkgver.tar.gz)
-md5sums=(146ae970690d5df1a6b4a791e42b735f)
+md5sums=(3d56c4388331175e6f537527f3fd74a1)
 
 build() {
 cd $startdir/src/lines-$pkgver
