@@ -15,6 +15,7 @@ $(OBJ): %.o : %.c
 	$(CC) -c $(<) $(I) $(CFLAGS) -DGAMEDATADIR=\"$(PREFIX)/share/lines/\"
 
 lines:  $(OBJ)
+	cat lines.desktop.in | sed -e "s|@BINDIR|$(BINDIR)|g" > lines.desktop
 	$(CC) $(CFLAGS) $(LDFLAGS) $(^) -o $(@) 
 	strip lines
 
@@ -52,5 +53,4 @@ install: all
 	install -d $(DESTDIR)/$(PREFIX)/share/pixmaps
 	install -d $(DESTDIR)/$(PREFIX)/share/applications/hildon/
 	install -m 0644 icon/lines.png $(DESTDIR)/$(PREFIX)/share/pixmaps
-	cat lines.desktop.in | sed -e "s|@PREFIX|$(PREFIX)|g" > lines.desktop
 	install -m 0644 lines.desktop $(DESTDIR)/$(PREFIX)/share/applications/hildon/lines.desktop
